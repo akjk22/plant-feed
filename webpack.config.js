@@ -6,7 +6,7 @@ var webpack = require('webpack');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
-	entry: './src/weather-service.js', // './src/index': './src/main.js'
+	entry: './src/weather-service.js', 
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'dist')

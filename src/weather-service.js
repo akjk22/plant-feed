@@ -2,11 +2,11 @@ import './weather-ui.js';
 // import $ from 'jquery';
 
 // async/await method for api call
-export class WeatherService {
-	async getWeatherByCity(city) {
+export class MovieTitles {
+	async getMovieByTitle(lebowski) {
 		try {
 			let response = await fetch(
-				`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.API_KEY}`
+				`https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=lebowski&api-key=HgiG7fFZruJfUP9e5UItxW0veS1OgG0t`
 			);
 			let jsonifiedResponse;
 			if (response.ok && response.status == 200) {

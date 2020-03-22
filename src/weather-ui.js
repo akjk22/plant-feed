@@ -1,24 +1,25 @@
-import { WeatherService } from './weather-service.js';
+import { MovieTitles } from './weather-service.js';
 
 $(document).ready(function() {
 	$('#weatherLocation').click(function() {
-		const city = $('#location').val();
+		const lebowski = $('#location').val();
 		$('#location').val('');
 
 		(async () => {
-			let weatherService = new WeatherService();
-			const response = await weatherService.getWeatherByCity(city);
+			let movieTitles = new MovieTitles();
+			const response = await movieTitles.getMovieByTitle(lebowski);
+			console.log(response);
 			getElements(response);
-		})();
+	})();
+
 
 		const getElements = function(response) {
 			if (response) {
-				$('.showHumidity').text(`The humidity in ${city} is ${response.main.humidity}%`);
-				$('.showTemp').text(`The temperature in Kelvins is ${response.main.temp} degrees.`);
-			} else {
-				$('.showHumidity').text(`There was an error handling your request.`);
-				$('.showTemp').text(`Please check your inputs and try again!`);
-			}
-		};
+				$('.showHumidity').append(
+					`<div><h1>${response.results[0].display_title}</h1><h4>${response.results[0].byline}<p>${response.results[0]
+							.link.url}</p><p>${response.results[0]
+								.opening_date}</p></div>`)
+		}
+	}
 	});
 });

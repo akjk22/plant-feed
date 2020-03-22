@@ -28,7 +28,7 @@ $(document).ready(function() {
 		for (let i = 0; i < response.results.length; i++) {
 				$('.showHumidity').append(
 						`<div><h1>#${i} ${response.results[i].display_title}</h1><h4>${response.results[i].byline}<p>${response.results[i]
-								.link.url}</p> </div>`
+								.link.url}</p><img alt="" width="200" src="${response.results[i].multimedia.src}" /> </div>`
 				);
 		}
 };

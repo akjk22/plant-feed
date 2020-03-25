@@ -22,7 +22,8 @@ $(document).ready(function() {
 	// 	}
 	// };
 	const displayResults = (response) => {
-		console.log(response.meals.strMeal);
+
+		console.log(response.meals);
 		// for (let i = 0; i < response.name.length; i++) {
 		// 		$('.showHumidity').append(
 		// 				`<div><h1>#${i} ${response[i].name}</h1></div>`

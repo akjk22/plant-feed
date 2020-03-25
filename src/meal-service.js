@@ -3,11 +3,10 @@ import './meal-ui.js';
 // async/await method for api call
 export class MealSearch {
 
-	async getMealName(meals) {
+	async getMealName() {
 		try {
 			let response = await fetch(
-				`https://www.themealdb.com/api/json/v1/1/search.php?s=${meals}`,
-				{ mode: 'no-cors'}
+				`https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata`
 			);
 			let jsonifiedResponse;
 			if (response.ok && response.status == 200) {

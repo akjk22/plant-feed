@@ -2,9 +2,9 @@ import { MealSearch } from './meal-service.js';
 
 
 $(document).ready(function() {
-	$('#weatherLocation').click(function() {
-		const meals = $('#location').val();
-		$('#location').val('');
+	$('#meal-button').click(function() {
+		const meals = $('#meal-input').val();
+		// $('#location').val('');
 
 		// const state = $('#').val();
 		(async () => {
@@ -23,12 +23,12 @@ $(document).ready(function() {
 	// };
 	const displayResults = (response) => {
 
-		console.log(response.meals[5].strMeal);
-		// for (let i = 0; i < meals.length; i++) {
-		// 		$('.showHumidity').append(
-		// 				`<div><h1>#${i} ${response[i].meals}</h1></div>`
-		// 		);
-		// }
+		// console.log(response.meals[5].strMeal);
+		for (let i = 0; i < response.meals.length; i++) {
+				$('.showHumidity').append(
+						`<div><h1>#${i} ${response.meals[i].strMeal}</h1></div>`
+				);
+		}
 };
 	});
 });

@@ -23,10 +23,10 @@ $(document).ready(function() {
 	// };
 	const displayResults = (response) => {
 
-		console.log(response.meals);
-		// for (let i = 0; i < response.name.length; i++) {
+		console.log(response.meals[5].strMeal);
+		// for (let i = 0; i < meals.length; i++) {
 		// 		$('.showHumidity').append(
-		// 				`<div><h1>#${i} ${response[i].name}</h1></div>`
+		// 				`<div><h1>#${i} ${response[i].meals}</h1></div>`
 		// 		);
 		// }
 };

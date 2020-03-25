@@ -1,13 +1,12 @@
-import './brewery-ui.js';
+import './meal-ui.js';
 // import $ from 'jquery';
-
 // async/await method for api call
-// A user should be able to enter a medical issue to receive a list of doctors in the Portland area that fit the search query.
-export class BreweryLocation {
-	async getBreweryByState() {
+export class MealSearch {
+
+	async getMealName(meals) {
 		try {
 			let response = await fetch(
-				`https://api.openbrewerydb.org/breweries?by_state&state`,
+				`https://www.themealdb.com/api/json/v1/1/search.php?s=${meals}`,
 				{ mode: 'no-cors'}
 			);
 			let jsonifiedResponse;
@@ -21,4 +20,13 @@ export class BreweryLocation {
 			return false;
 		}
 	}
+
+	// async function getJSON(url) {
+	// 	try {
+	// 		const response = await fetch(url);
+	// 		return await response.json();
+	// 	} catch (error) {
+	// 		throw error;
+	// 	}
+	// }
 }

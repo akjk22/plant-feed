@@ -6,7 +6,7 @@ var webpack = require('webpack');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
-	entry: './src/brewery-service.js', 
+	entry: './src/meal-service.js', 
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'dist')
@@ -19,7 +19,7 @@ module.exports = {
 		new UglifyJsPlugin({ sourceMap: true }),
 		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({
-			title: 'Brewery API',
+			title: 'Meal API',
 			template: './src/index.html',
 			inject: 'head'
 		}),

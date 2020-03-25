@@ -1,12 +1,14 @@
-import './weather-ui.js';
+import './brewery-ui.js';
 // import $ from 'jquery';
 
 // async/await method for api call
-export class MovieTitles {
-	async getMovieByTitle() {
+// A user should be able to enter a medical issue to receive a list of doctors in the Portland area that fit the search query.
+export class BreweryLocation {
+	async getBreweryByState() {
 		try {
 			let response = await fetch(
-				`https://api.nytimes.com/svc/movies/v2/reviews/search.json?&api-key=HgiG7fFZruJfUP9e5UItxW0veS1OgG0t`
+				`https://api.openbrewerydb.org/breweries?by_state&state`,
+				{ mode: 'no-cors'}
 			);
 			let jsonifiedResponse;
 			if (response.ok && response.status == 200) {

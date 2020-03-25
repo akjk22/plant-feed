@@ -1,5 +1,5 @@
 {
-	"name": "GalacticAge",
+	"name": "BreweryFinder",
 	"version": "1.0.0",
 	"description": "",
 	"main": "app.js",
@@ -11,7 +11,7 @@
 		"debug": "node --inspect node_modules/.bin/jest --runInBand"
 	},
 	"keywords": [],
-	"author": "Luke Schlessinger https://github.com/lmschless",
+	"author": "Andrew Kim https://github.com/akjk22",
 	"license": "ISC",
 	"devDependencies": {
 		"@babel/core": "^7.6.4",

@@ -1,14 +1,14 @@
-import { MovieTitles } from './weather-service.js';
+import { BreweryLocation } from './brewery-service.js';
 
 
 $(document).ready(function() {
 	$('#weatherLocation').click(function() {
-		const lebowski = $('#location').val();
+		const state = $('#location').val();
 		$('#location').val('');
 
 		(async () => {
-			let movieTitles = new MovieTitles();
-			const response = await movieTitles.getMovieByTitle(lebowski);
+			let breweryLocation = new BreweryLocation();
+			const response = await brewery.getBreweryByState(state);
 			console.log(response);
 			// getElements(response);
 			displayResults(response);
@@ -25,10 +25,10 @@ $(document).ready(function() {
 	// 	}
 	// };
 	const displayResults = (response) => {
-		for (let i = 0; i < response.results.length; i++) {
+		console.log(response.name);
+		for (let i = 0; i < response.name.length; i++) {
 				$('.showHumidity').append(
-						`<div><h1>#${i} ${response.results[i].display_title}</h1><h4>${response.results[i].byline}<p>${response.results[i]
-								.link.url}</p><img alt="" width="200" src="${response.results[i].multimedia.src}" /> </div>`
+						`<div><h1>#${i} ${response[i].name}</h1></div>`
 				);
 		}
 };

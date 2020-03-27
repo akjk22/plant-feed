@@ -11,15 +11,47 @@
   <body>
     <div class="container">
       <h1>Find A Recipe</h1>
-      <!-- <input id="meal-input" type="text"> -->
-      <button class="btn-success" id="meal-button">Click to Populate Meals</button>
-
-      <select id="select">
-        <option value="Spicy Arrabiata Penne">Spicy Arrabiata Penne</option>
-      </select>
-     
-      <div class="showMealName"></div>
-      <div class="showTemp"></div>
+      <div class="row">
+        <div class="col--6">
+          <label for="select">Select a Dish:</label> 
+            <select id="select">
+              <option value="Spicy Arrabiata Penne">Spicy Arrabiata Penne</option>
+              <option value="Corba">Corba</option>
+              <option value="Kumpir">Kumpir</option>
+              <option value="Dal fry">Dal fry</option>
+              <option value="Poutine">Poutine</option>
+              <option value="Lasagne">Lasagne</option>
+              <option value="Timbits">Timbits</option>
+              <option value="Wontons">Wontons</option>
+              <option value="Kafteji">Kafteji</option>
+              <option value="Kapsalon">Kapsalon</option>
+              <option value="Fish pie">Fish pie</option>
+              <option value="Pancakes">Pancakes</option>
+              <option value="Kedgeree">Kedgeree</option>
+              <option value="Flamiche">Flamiche</option>
+              <option value="Stamppot">Stamppot</option>
+              <option value="Eton Mess">Eton Mess</option>
+              <option value="Ribollita">Ribollita</option>
+              <option value="Yaki Udon">Yaki Udon</option>
+              <option value="Tourtiere">Tourtiere</option>
+              <option value="Sugar Pie">Sugar Pie</option>
+              <option value="Shakshuka">Shakshuka</option>
+              <option value="Pad See Ew">Pad See Ew</option>
+              <option value="Irish stew">Irish stew</option>
+              <option value="Coq au vin">Coq au vin</option>
+              <option value="Rock Cakes">Rock Cakes</option>
+              <option value="Rappie Pie">Rappie Pie</option>
+            </select>
+            <button class="btn-success" id="meal-button">Get Instructions</button>
+          <!-- <button class="btn btn-success" id="categoryName">Get Recipe Ideas</button>
+          <select class="custom-select" size="20" id="showCategory">
+          </select>
+          <button class="btn btn-success" id="recipeName">Get Recipes</button> -->
+        </div>
+    <div class="errors"></div>
+    <div class="recipe">
     </div>
+    </div>
+    
   </body>
 </html>

@@ -1,6 +1,10 @@
 import './meal-ui.js';
 import './styles.css';
-// import './img/cheflogo.jpg'
+// import chefIcon from './images/chef.png';
+
+
+// const chefImg = document.getElementById('chef');
+// chefImg.src = chefIcon;
 
 export class MealSearch {
 

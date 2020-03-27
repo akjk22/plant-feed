@@ -28,6 +28,11 @@ body {
   margin: 0px auto;
   text-align: center;
 }
+.reset-button {
+  margin: 0px auto;
+  text-align: center;
+  display: none;
+}
 .generated-img {
   max-width: 350px;
   height: auto;
@@ -46,7 +51,7 @@ a:visited {
   color: black;
 }
 img {
-  position: relative;
+  /* position: relative; */
   background-color: #c3cfe2;
 }
 .btn:focus {

@@ -18,6 +18,7 @@ export class MealSearch {
 				jsonifiedResponse = await response.json();
 			} else {
 				jsonifiedResponse = false;
+				console.log("Sorry there was an error.");
 			}
 			return jsonifiedResponse;
 		} catch (error) {

@@ -4,15 +4,20 @@
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
     <script type="text/javascript" src=""></script>
     <title>Meal</title>
+    <link rel= "stylesheet"
+    type= "text/css"
+    href= "styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Find meal</h1>
-      <label for="meal-input">Type in a meal</label>
-      <input id="meal-input" type="text">
-      <button class="btn-success" id="meal-button">Get meals</button>
-      <div class="errors"></div>
-      <select class="showMealName" id="dropdown"></select>
+      <h1>Find A Recipe</h1>
+      <!-- <input id="meal-input" type="text"> -->
+      <button class="btn-success" id="meal-button">Click to Populate Meals</button>
+
+      <select id="select">
+        <option value="Spicy Arrabiata Penne">Spicy Arrabiata Penne</option>
+      </select>
+     
       <div class="showMealName"></div>
       <div class="showTemp"></div>
     </div>

@@ -1,4 +1,5 @@
 import './meal-ui.js';
+import './styles.css';
 // import $ from 'jquery';
 // async/await method for api call
 export class MealSearch {
@@ -20,12 +21,5 @@ export class MealSearch {
 		}
 	}
 
-	// async function getJSON(url) {
-	// 	try {
-	// 		const response = await fetch(url);
-	// 		return await response.json();
-	// 	} catch (error) {
-	// 		throw error;
-	// 	}
-	// }
+
 }

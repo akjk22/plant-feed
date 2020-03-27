@@ -1,5 +1,6 @@
 import './meal-ui.js';
 import './styles.css';
+// import './img/cheflogo.jpg'
 
 export class MealSearch {
 

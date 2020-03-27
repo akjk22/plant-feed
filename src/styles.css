@@ -1,30 +1,54 @@
 .container {
   display: block;
-  margin: 0 auto;
+  margin: 20 auto;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 select {
+  display: inline;
   border: 0.5px solid grey;
+  padding: 3px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #c3cfe2;
 }
-.btn-success {
+.btn {
+  display: block;
+  margin: 20 auto;
   border: 2px solid black;
   border-radius: 8px;
-  background-color: #ffffff;
-
+  background-color: #c3cfe2;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
 }
 body {
-  background-color: #ffffff;
+  background-color: #c3cfe2;
+  font-family: 'Roboto', sans-serif;
 }
 .recipe {
   margin: 0px auto;
   text-align: center;
-  padding-top: 50px;
 }
-img {
+.generated-img {
   max-width: 350px;
   height: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+.instruction-text {
+  margin: 0 auto;
+  font-size: 20px;
+  max-width: 80vw;
 }
 a:visited {
   text-decoration: none;
   color: black;
+}
+img {
+  position: relative;
+  background-color: #c3cfe2;
+}
+.btn:focus {
+  outline: none;
 }
